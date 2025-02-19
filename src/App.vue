@@ -1,5 +1,6 @@
 <script setup>
 import projectData from './data/projects.json'
+import technicalSkillsData from './data/technicalskills.json'
 
 function GoToLink(link) {
   window.open(link, '_blank')
@@ -75,25 +76,14 @@ function scrollToSection(elementId) {
         </div>
 
         <!--Programming Languages/Technologies-->
-        <h1 class="text-2xl font-medium text-center pt-20 pb-10">
+        <h1 id="technicalSkills" class="text-2xl font-medium text-center pt-20 pb-10">
           Technical Skills
         </h1>
-        <div id="technicalSkills" class="grid lg:grid-cols-4 grid-rows-4 lg:gap-4 mt-4">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL" class="h-20 w-20" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" class="h-20 w-20"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="h-20 w-20"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" class="h-20 w-20"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" class="h-20 w-20"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg" alt="Lua" class="h-20 w-20"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" class="h-20 w-20"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" class="h-20 w-20"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="h-20 w-20"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Javascript" class="h-20 w-20"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg" alt="Visual Basic" class="h-20 w-20"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="Visual Studio Code" class="h-20 w-20"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" alt="Visual Studio" class="h-20 w-20"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" alt="Github" class="h-20 w-20"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" alt="Unity Engine" class="h-20 w-20"/>
+        <div class="grid lg:grid-cols-4 grid-rows-4 lg:gap-4 mt-4">
+          <div v-for="skill in technicalSkillsData">
+            <img :src="skill.imgLink" :alt="skill.name" class="h-20 w-20"/>
+            <!--https://devicon.dev/ this is the website for the icons for future reference-->
+          </div>
         </div>
       </div>
     </div>

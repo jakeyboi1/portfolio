@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Lua",
+        "imgLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg"
+    },
+    {
+        "name": "Github",
+        "imgLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+    },
+    {
+        "name": "Visual Studio",
+        "imgLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg"
+    },
+    {
+        "name": "Visual Studio Code",
+        "imgLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+    },
+    {
+        "name": "SQL",
+        "imgLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+    },
+    {
+        "name": "Python",
+        "imgLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+    },
+    {
+        "name": "C#",
+        "imgLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+    },
+    {
+        "name": "C++",
+        "imgLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+    },
+    {
+        "name": "MongoDB",
+        "imgLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+    },
+    {
+        "name": "HTML",
+        "imgLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+    },
+    {
+        "name": "CSS",
+        "imgLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+    },
+    {
+        "name": "Javascript",
+        "imgLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+    },
+    {
+        "name": "Vue.js",
+        "imgLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+    },
+    {
+        "name": "Visual Basic",
+        "imgLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg"
+    },
+    {
+        "name": "Unity Engine",
+        "imgLink": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"
+    }
+]
