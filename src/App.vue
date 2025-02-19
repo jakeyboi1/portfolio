@@ -1,5 +1,6 @@
 <script setup>
 import projectData from './data/projects.json'
+
 function GoToLink(link) {
   window.open(link, '_blank')
 }
@@ -10,27 +11,25 @@ function scrollToSection(elementId) {
     element.scrollIntoView({behavior: "smooth"});
   }
 }
-
-
 </script>
 
 
 <template>
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  
   <div class="h-screen w-screen flex items-center justify-center overflow-x-hidden overflow-y-hidden">
     <div class="w-screen h-screen border border-gray-700 grid grid-cols-2">
       <!-- LEFT SIDE -->
-      <div class="border-r border-gray-700 text-white p-6 flex flex-col pl-40">
+      <div class="border-r border-gray-700 text-white p-6 flex flex-col lg:pl-40">
         <h1 class="font-bold lg:text-5xl text-2xl pt-10">Jake Landrum</h1>
         <p class="pt-4 lg:text-xl text-lg font-semibold">Software Engineer</p>
 
         <div class="mt-10 space-y-4">
-          <button @click="scrollToSection('aboutMe')" class="text-gray-400 hover:text-white">• About Me</button>
+          <button @click="scrollToSection('aboutMe')" class="text-gray-400 hover:text-white hover:cursor-pointer">• About Me</button>
           <br>
-          <button @click="scrollToSection('projects')" class="text-gray-400 hover:text-white">• Projects</button>
+          <button @click="scrollToSection('projects')" class="text-gray-400 hover:text-white hover:cursor-pointer">• Projects</button>
           <br>
-          <button class="text-gray-400 hover:text-white">• Work Experience</button>
-          <br>
-          <button class="text-gray-400 hover:text-white">• Programming Languages</button>
+          <button @click="scrollToSection('technicalSkills')" class="text-gray-400 hover:text-white hover:cursor-pointer">• Technical Skills</button>
         </div>
 
         <div class="mt-auto flex space-x-4 pt-10">
@@ -41,6 +40,7 @@ function scrollToSection(elementId) {
 
       <!-- RIGHT SIDE -->
       <div class="overflow-y-auto h-screen text-white p-6">
+        <!--About me-->
         <h1 id="aboutMe" class="text-2xl font-medium text-center pt-10">About Me</h1>
         <p class="pt-6 lg:text-lg text-gray-400 opacity-95">
           I’m a software engineer passionate about creating high-quality, efficient systems that prioritize well-written code and optimal performance. Problem-solving is at the core of my approach, and I strive to build impactful, optimal, and well-documented solutions.
@@ -50,9 +50,10 @@ function scrollToSection(elementId) {
           In my free time, I enjoy playing video games, watching horror movies, and keeping myself occupied with hobby coding projects!
         </p>
 
+        <!--Projects-->
         <h1 id="projects" class="text-2xl font-medium text-center pt-20 pb-10">My Projects</h1>
-        <div class="grid grid-rows-4 gap-4 mt-4">
-          <div v-for="project in projectData" class="h-30 pl-30">
+        <div class="grid grid-rows-4 lg:gap-4 mt-4">
+          <div v-for="project in projectData">
             <div v-if="project.isShowcase" @click="GoToLink(project.projectLink)" class="hover:opacity-70 hover:cursor-pointer">
               <h1 class="text-lg font-semibold flex">
                 {{ project.projectName }}
@@ -67,12 +68,33 @@ function scrollToSection(elementId) {
               <br>
             </div>
           </div>
-          <button class="pt-4 text-left pl-30 font-bold hover:opacity-80 hover:cursor-pointer flex">
+          <button class="pt-4 text-left font-bold hover:opacity-80 hover:cursor-pointer flex">
             View All Projects
             <svg class="w-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path style="fill:#FFFFFF" d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z" data-name="Right"/></svg>
           </button> 
         </div>
 
+        <!--Programming Languages/Technologies-->
+        <h1 class="text-2xl font-medium text-center pt-20 pb-10">
+          Technical Skills
+        </h1>
+        <div id="technicalSkills" class="grid lg:grid-cols-4 grid-rows-4 lg:gap-4 mt-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL" class="h-20 w-20" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" class="h-20 w-20"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="h-20 w-20"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" class="h-20 w-20"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" class="h-20 w-20"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg" alt="Lua" class="h-20 w-20"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" class="h-20 w-20"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" class="h-20 w-20"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="h-20 w-20"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Javascript" class="h-20 w-20"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg" alt="Visual Basic" class="h-20 w-20"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="Visual Studio Code" class="h-20 w-20"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" alt="Visual Studio" class="h-20 w-20"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" alt="Github" class="h-20 w-20"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" alt="Unity Engine" class="h-20 w-20"/>
+        </div>
       </div>
     </div>
   </div>
