@@ -19,9 +19,9 @@ function scrollToSection(elementId) {
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   
   <div class="h-screen w-screen flex items-center justify-center overflow-x-hidden overflow-y-hidden">
-    <div class="w-screen h-screen border border-gray-700 grid grid-cols-2">
+    <div class="w-screen h-screen grid grid-cols-2">
       <!-- LEFT SIDE -->
-      <div class="border-r border-gray-700 text-white p-6 flex flex-col lg:pl-40">
+      <div class="text-white p-6 flex flex-col lg:pl-40">
         <h1 class="font-bold lg:text-5xl text-2xl pt-10">Jake Landrum</h1>
         <p class="pt-4 lg:text-xl text-lg font-semibold">Software Engineer</p>
 
