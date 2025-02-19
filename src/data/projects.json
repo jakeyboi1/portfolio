@@ -1,0 +1,30 @@
+[
+    {
+        "projectName": "IL2CPP Base",
+        "projectLink": "https://github.com/jakeyboi1/IL2CPPBase",
+        "description": "A base for modding IL2CPP compiled games on the Unity game engine.",
+        "languagesUsed": ["C++"],
+        "isShowcase": true
+    },
+    {
+        "projectName": "Python CLI",
+        "description": "A multi functional command line interface built using Python.",
+        "projectLink": "https://github.com/jakeyboi1/PythonCLI",
+        "languagesUsed": ["Python", "Json"],
+        "isShowcase": true
+    },
+    {
+        "projectName": "Simple Save",
+        "projectLink": "https://github.com/jakeyboi1/SimpleSave",
+        "description": "Simple Save is a save system built for single players games on the Unity Engine.",
+        "languagesUsed": ["C#", "Json", "Unity Engine"],
+        "isShowcase": true
+    },
+    {
+        "projectName": "Portfolio Website",
+        "projectLink": "https://github.com/jakeyboi1/portfolio",
+        "description": "Thats right this very website your own is a project of mine! This website was built using Vue.js and Tailwind CSS, and is hosted on Github Pages!",
+        "languagesUsed": ["Vue.js", "Tailwind", "Json", "Javascript"],
+        "isShowcase": true
+    }
+]
